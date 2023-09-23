@@ -4,6 +4,7 @@ body, html {
     font-family: Arial, sans-serif;
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .scroll-container {
@@ -18,6 +19,7 @@ body, html {
     text-align: center;
     padding: 50px;
     box-sizing: border-box;
+    color: aliceblue;
 }
 
 h2 {
