@@ -13,7 +13,7 @@ window.addEventListener('resize', () => {
 });
 
 window.addEventListener('wheel', (e) => {
-    e.preventDefault();
+    if (e.cancelable) e.preventDefault();
 
     if (!isScrolling) {
         const scrollContainer = document.querySelector('.scroll-container');
@@ -36,8 +36,6 @@ window.addEventListener('wheel', (e) => {
         }, 500);
     }
 });
-
-
 
 const prevButton = document.querySelector('.nav-prev');
 const nextButton = document.querySelector('.nav-next');
